@@ -19,7 +19,7 @@
 - Virus-based vectors can cause mis-assignment.
 
 
-`postviritu` reuses EsViritu's quantitative metrics (read counts, RPKMF,
+`postviritu` keeps EsViritu's quantitative metrics (read counts, RPKMF,
 coverage, Pi, etc.) unchanged and only updates the **taxonomy** columns, adding
 provenance columns that record the original vs. new assignment.
 
@@ -66,11 +66,11 @@ names). Use the same dump for `setup-mmseqs` and for later runs.
 
 ## Usage
 
-### Run with remote BLASTN (no local DB)
+### Run with remote BLASTN (no local DB) on EsViritu output
 
 You can search NCBI's `nt` or `core_nt` database remotely through Biopython's QBLAST
 client instead of building a local BLAST or mmseqs2 database. The input and output
-formats are identical to `postviritu mmseqs`; only the search backend changes.
+formats for `postviritu blastn` and `postviritu mmseqs`; only the search backend changes.
 
 ```bash
 postviritu blastn \
