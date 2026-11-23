@@ -24,6 +24,11 @@ dev = [
     "pytest>=7.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/esviritu/postviritu"
+Repository = "https://github.com/esviritu/postviritu"
+Issues = "https://github.com/esviritu/postviritu/issues"
+
 [project.scripts]
 postviritu = "postviritu.cli:main"
 
